@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "model": "iPhone 14 Pro",
+        "price": 999,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637664_960_720.jpg",
+        "description": "iPhone 14 Pro with 128GB storage, Deep Purple color."
+    },
+    {
+        "id": 2,
+        "model": "iPhone 14",
+        "price": 799,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/43/iphone-6637665_960_720.jpg",
+        "description": "iPhone 14 with 128GB storage, Midnight color."
+    },
+    {
+        "id": 3,
+        "model": "iPhone 13 Pro",
+        "price": 949,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637663_960_720.jpg",
+        "description": "iPhone 13 Pro with 256GB storage, Sierra Blue color."
+    },
+    {
+        "id": 4,
+        "model": "iPhone 13",
+        "price": 699,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/43/iphone-6637666_960_720.jpg",
+        "description": "iPhone 13 with 128GB storage, Starlight color."
+    },
+    {
+        "id": 5,
+        "model": "iPhone 12 Pro Max",
+        "price": 1099,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/43/iphone-6637667_960_720.jpg",
+        "description": "iPhone 12 Pro Max with 512GB storage, Pacific Blue color."
+    },
+    {
+        "id": 6,
+        "model": "iPhone 12",
+        "price": 699,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/43/iphone-6637668_960_720.jpg",
+        "description": "iPhone 12 with 64GB storage, Red color."
+    },
+    {
+        "id": 7,
+        "model": "iPhone 11 Pro",
+        "price": 899,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637662_960_720.jpg",
+        "description": "iPhone 11 Pro with 256GB storage, Midnight Green color."
+    },
+    {
+        "id": 8,
+        "model": "iPhone 11",
+        "price": 549,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/43/iphone-6637669_960_720.jpg",
+        "description": "iPhone 11 with 64GB storage, Purple color."
+    },
+    {
+        "id": 9,
+        "model": "iPhone SE (2022)",
+        "price": 429,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/43/iphone-6637670_960_720.jpg",
+        "description": "iPhone SE (2022) with 64GB storage, Black color."
+    },
+    {
+        "id": 10,
+        "model": "iPhone XR",
+        "price": 499,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637661_960_720.jpg",
+        "description": "iPhone XR with 128GB storage, Yellow color."
+    },
+    {
+        "id": 11,
+        "model": "iPhone X",
+        "price": 599,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/43/iphone-6637671_960_720.jpg",
+        "description": "iPhone X with 64GB storage, Silver color."
+    },
+    {
+        "id": 12,
+        "model": "iPhone 8 Plus",
+        "price": 479,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/43/iphone-6637672_960_720.jpg",
+        "description": "iPhone 8 Plus with 64GB storage, Gold color."
+    },
+    {
+        "id": 13,
+        "model": "iPhone 8",
+        "price": 399,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637673_960_720.jpg",
+        "description": "iPhone 8 with 64GB storage, Space Gray color."
+    },
+    {
+        "id": 14,
+        "model": "iPhone 7 Plus",
+        "price": 349,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/43/iphone-6637674_960_720.jpg",
+        "description": "iPhone 7 Plus with 32GB storage, Rose Gold color."
+    },
+    {
+        "id": 15,
+        "model": "iPhone 7",
+        "price": 299,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637675_960_720.jpg",
+        "description": "iPhone 7 with 32GB storage, Jet Black color."
+    },
+    {
+        "id": 16,
+        "model": "iPhone 6s Plus",
+        "price": 249,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637676_960_720.jpg",
+        "description": "iPhone 6s Plus with 16GB storage, Silver color."
+    },
+    {
+        "id": 17,
+        "model": "iPhone 6s",
+        "price": 199,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637677_960_720.jpg",
+        "description": "iPhone 6s with 16GB storage, Gold color."
+    },
+    {
+        "id": 18,
+        "model": "iPhone SE (1st Gen)",
+        "price": 179,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637678_960_720.jpg",
+        "description": "iPhone SE (1st Gen) with 16GB storage, Space Gray color."
+    },
+    {
+        "id": 19,
+        "model": "iPhone 5s",
+        "price": 149,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637679_960_720.jpg",
+        "description": "iPhone 5s with 16GB storage, Gold color."
+    },
+    {
+        "id": 20,
+        "model": "iPhone 5c",
+        "price": 129,
+        "image": "https://cdn.pixabay.com/photo/2021/09/15/11/42/iphone-6637680_960_720.jpg",
+        "description": "iPhone 5c with 16GB storage, Blue color."
+    }
+]

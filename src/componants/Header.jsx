@@ -17,26 +17,40 @@ const Header = ({ title }) => {
                     <div className="flex justify-around w-3/4 mx-auto py-3">
                         <NavLink
                             to="/"
-                            className="link inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+                            className=" transform transition-transform duration-300 hover:scale-105 link inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
                         >
                             Home
                         </NavLink>
                         <NavLink
                             to="/gallery"
-                            className="link inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+                            className="transform transition-transform duration-300 hover:scale-105 link inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
                         >
                             Gallery
                         </NavLink>
                         <NavLink
-                            to="/maps"
-                            className="link inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+                            to="/contactus"
+                            className="transform transition-transform duration-300 hover:scale-105 link inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
 
                         >
                             Contact Us
                         </NavLink>
+                        <NavLink
+                            to="/branches"
+                            className="transform transition-transform duration-300 hover:scale-105 link inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+
+                        >
+                           Branches
+                        </NavLink>
+                        <NavLink
+                            to="/login"
+                            className="transform transition-transform duration-300 hover:scale-105 link inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+
+                        >
+                            Login
+                        </NavLink>
                     </div>
                 </div>
-                <div className="w-[100px] flex justify-end items-center mr-[50px]">
+                <div className="w-[80px] flex justify-end items-center mr-[60px]">
                     <Link to="/">
                         <img src="./images/myLogo.png" alt="logo" />
                     </Link>

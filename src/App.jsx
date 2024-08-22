@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Gallery from './pages/Gallery'
 import Maps from './pages/Maps'
+import ConectUs from './pages/ConectUs'
+import Branches from './pages/Branches'
+import Login from './pages/Login'
 
 
 
@@ -15,7 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/maps" element={<  Maps />} />
+          <Route path="/contactus" element={<  ConectUs />} />
+          <Route path="/branches" element={<  Maps />} />
+          <Route path="/login" element={<  Login  />} />
         </Routes>
       </BrowserRouter>
 
