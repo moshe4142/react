@@ -5,8 +5,8 @@ import Footer from '../componants/Footer'
 const Branches = () => {
   return (
     <>
-    <Header />
-    <div className='bg-purple-300'>
+      <Header bgColor="purple-100" titleColor="black" title="Branches" />
+      <div className='py-[180px] bg-purple-300'>
 
     </div>
     <Footer />

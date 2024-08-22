@@ -1,65 +1,63 @@
-import React, { useRef, useState } from 'react'
+// src/Map.jsx
+import React, { useState } from 'react';
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import Button from './Button';
-import { OpenStreetMapProvider } from "leaflet-geosearch"
 import MyMarker from './MyMarker';
 
+const branches = [
+  { name: 'Tel Aviv-Yafo', position: [32.0784, 34.7806] }, // Example coordinates
+  { name: 'Nativot', position: [31.3382, 34.5861] }, // Example coordinates
+  { name: 'Or Yehuda', position: [32.0165, 34.8285] }, // Example coordinates
+  { name: 'Kiryat Ono', position: [32.0218, 34.8356] }  // Example coordinates
+];
 
 const Map = () => {
-    const mapProvider = new OpenStreetMapProvider();
-    const [position, setPosition] = useState([51.505, -0.09]);
-    const searchInputRef = useRef();
+  const [position, setPosition] = useState(branches[0].position);
+  const [selectedBranch, setSelectedBranch] = useState(branches[0]);
 
-    const locationSearch = async () => {
-        const inputValue = searchInputRef.current.value;
-        try {
-            const results = await mapProvider.search({ query: inputValue });
-            if (results.length > 0) {
-                setPosition([results[0].y, results[0].x]);
-            } else {
-                console.log('No results found');
-            }
-        } catch (error) {
-            console.error('Error fetching location:', error);
-        }
-    };
+  const handleBranchChange = (e) => {
+    const selectedBranchName = e.target.value;
+    const branch = branches.find(b => b.name === selectedBranchName);
+    if (branch) {
+      setPosition(branch.position);
+      setSelectedBranch(branch);
+    }
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        locationSearch();
-    };
-
-    return (
-        <>
-            <div className="w-[700px] m-auto">
-                <form onSubmit={handleSubmit}>
-                    <div className='flex'>
-                        <input
-                            id="area"
-                            type="text"
-                            placeholder="Enter area to search"
-                            ref={searchInputRef}
-                            className="h-10 m-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:drop-shadow-lg"
-                        />
-                        <Button type="submit" number="Search" />
-                    </div>
-
-                </form>
-            </div>
-            <div className="w-[700px] h-[500px] m-auto my-8 border-gray border-[1px] rounded-2xl shadow-2xl transform transition-transform duration-300 hover:scale-105">
-                <MapContainer center={position} zoom={13} style={{ height: '500px', width: '100%' }}>
-                    <TileLayer
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    />
-
-                    <MyMarker pos={position} />
-                </MapContainer>
-            </div>
-
-        </>
-    );
+  return (
+    <>
+      <div className="w-[700px] m-auto">
+        <div className="flex flex-col items-center mb-4">
+          <h2 className="text-2xl font-bold mb-4">Our Locations</h2>
+          <select
+            onChange={handleBranchChange}
+            className="h-12 shadow-lg border rounded-lg w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:drop-shadow-lg"
+          >
+            {branches.map((branch, index) => (
+              <option key={index} value={branch.name}>
+                {branch.name}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <div className="w-[700px] h-[500px] m-auto my-8 border-gray border-[1px] rounded-2xl shadow-2xl transform transition-transform duration-300 hover:scale-105">
+        <MapContainer center={position} zoom={13} style={{ height: '100%', width: '100%' }}>
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
+          {branches.map((branch, index) => (
+            <Marker key={index} position={branch.position}>
+              <Popup>{branch.name}</Popup>
+            </Marker>
+          ))}
+          <MyMarker pos={position} />
+        </MapContainer>
+      </div>
+    </>
+  );
 };
 
 export default Map;
